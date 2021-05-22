@@ -412,8 +412,15 @@ h1 {
 }
 
 .custom-offers {
-  border: 1px solid red;
   margin: 80px 0 80px;
+  position: relative;
+}
+.custom-offers a {
+  text-transform: uppercase;
+  color: #151514;
+}
+.custom-offers h3 {
+  display: inline;
 }
 
 .custom-offers div:nth-of-type(1) {
@@ -422,13 +429,13 @@ h1 {
   display: flex;
 }
 .custom-offers div:nth-of-type(1) li {
-  border: 1px solid blue;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin: 0 35px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .custom-offers div:nth-of-type(2) {
@@ -437,12 +444,29 @@ h1 {
   display: flex;
 }
 .custom-offers div:nth-of-type(2) li {
-  border: 1px solid blue;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin: 35px 35px 0 35px;
+  position: relative;
 }
 
-i {
+.custom-offers i {
   position: absolute;
+  left: -35px;
+  top: 2px;
+}
+.custom-offers i::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #F8FB05;
+  border-radius: 100%;
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  z-index: -1;
+}
+
+.fa-file {
+  padding-left: 4px;
 }
