@@ -1,0 +1,82 @@
+// variables
+$black: #151514; 
+$evergreen: #065635;
+$yellow: #F8FB05;
+$ice: #E0FDDF;
+$white: #F5F5F5; 
+$outline: 'Kumar One Outline', cursive;
+$bold: 'Kumar One', cursive;
+$basic: 'Lato', sans-serif; 
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body, nav, ul, li, h1, h2, h3, h4, h6, p, ul, li, a, article {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: $outline; 
+  text-transform: uppercase;
+  line-height: 64px;
+  font-size: 3.4rem;
+}
+
+h2, h4 {
+  font-family: $bold;
+  font-size: 1.65rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Kumar One', cursive;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  background: $evergreen;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  // trbl
+  padding: 10px 15px 5px 15px;
+}
+
+.logo {
+  font-family: $bold;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  line-height: 24px; 
+}
+
+p {
+  font-family: $basic;
+}

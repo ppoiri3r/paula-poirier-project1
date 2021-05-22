@@ -241,5 +241,172 @@ html {
 
 body {
   font-size: 1rem;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body, nav, ul, li, h1, h2, h3, h4, h6, p, ul, li, a, article {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Kumar One Outline", cursive;
+  text-transform: uppercase;
+  line-height: 64px;
+  font-size: 3.4rem;
+}
+
+h2, h4 {
   font-family: "Kumar One", cursive;
+  font-size: 1.65rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Kumar One", cursive;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.button {
+  background: #065635;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px 15px 5px 15px;
+}
+
+.logo {
+  font-family: "Kumar One", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+header.main-index {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/header-home.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.main-topbar-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px;
+}
+.main-topbar-nav ul li {
+  padding-left: 30px;
+}
+.main-topbar-nav ul a {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.main-topbar-nav ul a:hover {
+  border-bottom: 5px solid #F8FB05;
+}
+
+h1 {
+  width: 50%;
+  margin-top: 35px;
+  margin-left: 130px;
+  font-weight: 500;
+}
+
+.main-index img {
+  width: 60%;
+  position: absolute;
+  left: -70px;
+  top: 260px;
+}
+
+.new-materials {
+  margin: 250px auto 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc((100% / 2) - 70px);
+      flex-basis: calc((100% / 2) - 70px);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+.container div:nth-of-type(1) {
+  width: calc(75% - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.container img {
+  -webkit-box-shadow: -20px 20px #F8FB05;
+          box-shadow: -20px 20px #F8FB05;
+}
+
+.gallery {
+  background: #E0FDDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery li {
+  width: calc((100% / 3) - 20px);
+  padding: 100px 0 100px;
 }

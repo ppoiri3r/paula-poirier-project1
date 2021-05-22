@@ -1,0 +1,43 @@
+
+header.main-index {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/header-home.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  // position: relative;
+}
+
+.main-topbar-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+    li {
+      padding-left: 30px;
+    }
+      a {
+        text-transform: uppercase;
+        font-family: $basic;
+        font-weight: bold;
+        color: black;
+        transition: 0.3s;
+      }
+        a:hover {
+          border-bottom: 5px solid $yellow;
+        }
+}
+
+h1 {
+  width: 50%;
+  // border: 1px solid red;
+  margin-top: 35px;
+  margin-left: 130px; 
+  font-weight: 500;
+}
+
+.main-index img {
+  width: 60%;
+  position: absolute;
+  left: -70px;
+  top: 260px;
+}
