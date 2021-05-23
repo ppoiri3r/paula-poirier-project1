@@ -1,0 +1,70 @@
+header.blog {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/blog-image.jpg);
+  height: 60vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.logo {
+  text-transform: uppercase;
+    span {
+      display: block;
+    }
+}
+
+.blog-topbar {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog ul {
+  display: flex;
+}
+
+.blog a {
+  font-family: $basic;
+  text-transform: uppercase;
+  padding: 20px;
+  color: $black;
+  font-weight: bold;
+  transition: 0.3s;
+    .blog a:hover {
+      border-bottom: 5px solid $yellow;
+    }
+}
+
+.blog h1 {
+  margin: 85px 0;
+}
+
+main.blog {
+  background: $ice;
+}
+
+.main-article {
+  background: $white;
+  padding-left: 124px;
+  border-right: 10px solid $yellow;
+  border-bottom: 10px solid $yellow;
+  width: 100%;
+  padding-right: 40px;
+  position: relative;
+  left: 19.5px;
+  z-index: 0;
+    h2 {
+      padding-top: 50px;
+    }
+}
+
+.image-and-article {
+  width: 60%;
+  position: relative;
+  right: 290px;
+  bottom: 60px;
+}
+
+.image-and-article img {
+  box-shadow: 20px 20px $yellow;
+  z-index: -1;
+}

@@ -491,6 +491,10 @@ h1 {
   padding-left: 4px;
 }
 
+.positioner {
+  position: relative;
+}
+
 .new-locations {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,12 +554,12 @@ h1 {
 }
 .new-locations .wicker-chairs {
   width: 85%;
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 73px;
-  top: 40px;
+  left: 105px;
+  top: 460px;
   -webkit-box-shadow: -20px 20px #F8FB05;
           box-shadow: -20px 20px #F8FB05;
 }
@@ -580,4 +584,83 @@ footer {
   color: #F5F5F5;
   text-align: center;
   margin-top: 125px;
+}
+
+header.blog {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/blog-image.jpg);
+  height: 60vh;
+  background-size: contain;
+  background-position: center;
+}
+
+.logo {
+  text-transform: uppercase;
+}
+.logo span {
+  display: block;
+}
+
+.blog-topbar {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog a {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #151514;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.blog a .blog a:hover {
+  border-bottom: 5px solid #F8FB05;
+}
+
+.blog h1 {
+  margin: 85px 0;
+}
+
+main.blog {
+  background: #E0FDDF;
+}
+
+.main-article {
+  background: #F5F5F5;
+  padding-left: 124px;
+  border-right: 10px solid #F8FB05;
+  border-bottom: 10px solid #F8FB05;
+  width: 100%;
+  padding-right: 40px;
+  position: relative;
+  left: 19.5px;
+  z-index: 0;
+}
+.main-article h2 {
+  padding-top: 50px;
+}
+
+.image-and-article {
+  width: 60%;
+  position: relative;
+  right: 290px;
+  bottom: 60px;
+}
+
+.image-and-article img {
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+  z-index: -1;
 }
