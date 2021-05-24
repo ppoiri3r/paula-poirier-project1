@@ -43,8 +43,9 @@
 // section THREE "customized offers" 
 
 .custom-offers {
-  margin: 80px 0 100px;
   position: relative;
+  padding-top: 50px;
+  padding-bottom: 70px;
     a {
       text-transform: uppercase;
       color: $black;
@@ -69,7 +70,7 @@
 .custom-offers div:nth-of-type(1) {
   display: flex;
     li {
-      flex-basis: 50%;
+      // flex-basis: 50%;
       margin: 0 35px;
       justify-content: space-between;
       position: relative;
@@ -79,7 +80,7 @@
 .custom-offers div:nth-of-type(2) {
   display: flex;
     li {
-      flex-basis: 50%;
+      // flex-basis: 50%;
       margin: 35px 35px 0 35px;
       position: relative;
     }
@@ -110,58 +111,65 @@
 
 // new locations/group programs section 
 
-.positioner {
+.new-locations {
+  background: $ice;
   position: relative;
 }
 
-.new-locations { 
+.flex-parent {
   display: flex;
-  justify-content: space-between;
-  background: $ice;
+  // position: relative;
+} 
+
+.parent-container {
+  border: 1px solid green;
 }
 
-.new-locations {
-  .group-programs {
-    padding: 70px;
-    // border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 80%;
-  }
-    .new-locations-heading {
-      padding: 70px;
-      // border: 1px solid red;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-      text-align: right;
-      width: 80%;
-      margin-left: 125px;
-    }
-      .group-programs p, .new-locations-heading p {
-        padding-bottom: 20px;
-      }
+.text-container {
+  margin: 50px 0;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
-.new-locations {
-  .table-chairs {
-    width: 85%;
-    position: relative;
-    bottom: 40px;
-    box-shadow: 20px 20px $yellow;
-  }
-    .wicker-chairs {
-      width: 85%;
-      position: absolute;
-      display: flex;
-      left: 105px;
-      top: 460px;
-      box-shadow: -20px 20px $yellow;
+.bottom {
+  margin-top: 50px;
+  text-align: right;
+  align-items: flex-end;
+    p {
+      margin-bottom: 20px;
     }
 }
+
+.top {
+  margin-bottom: 50px;
+  align-items: flex-start;
+    p {
+      margin-bottom: 20px;
+    }
+}
+
+.image-container {
+  border: 1px solid blue;
+}
+
+.top-left {
+  box-shadow: 20px 20px $yellow;
+  // position: relative;
+  // right: 120px;
+  // top: 0;
+}
+
+.bottom-right {
+  box-shadow: -20px 20px $yellow;
+  // position: relative;
+  // right: -140px;
+  // top: 0;
+}
+
+
 
 .banner {
   text-align: center;
