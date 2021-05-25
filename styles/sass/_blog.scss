@@ -38,30 +38,24 @@ header.blog {
   margin: 85px 0;
 }
 
-.image-and-article {
-  border: 1px solid blue;
-  width: 88%;
-  position: relative;
-  bottom: 100px;
-    img {
-      box-shadow: 20px 20px $yellow;
-      position: relative;
-      right: 120px;
-      width: 100%;
-    }
-      h2 {
-        padding-top: 45px;
-        // padding-right: 45px;
-      }
+// headers ends ^^^^ 
+
+.flex-top {
+  display: flex;
+  // justify-content: space-between;
 }
 
-.main-article {
-  width: 80%;
-  border-bottom: 9px solid $yellow;
-  border-right: 9px solid $yellow;
+.image-container-aside,
+.text-container-aside {
+  box-shadow: -20px 20px $yellow;
+  background: $yellow;
 }
 
+.blog-main {
+  background: $ice;
+}
 
-.image-container {
-  width: 88%;
+.article-post {
+  width: 60%;
+  background: $white;
 }

@@ -1,14 +1,58 @@
-.new-materials {
-  margin: 250px auto 100px;
+// HEADER STYLES //
+header.main-index {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/header-home.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  // position: relative;
+}
+
+.main-topbar-nav ul {
   display: flex;
-  // flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 20px;
+    li {
+      padding-left: 30px;
+    }
+      a {
+        text-transform: uppercase;
+        font-family: $basic;
+        font-weight: bold;
+        color: black;
+        transition: 0.3s;
+      }
+        a:hover {
+          border-bottom: 5px solid $yellow;
+        }
+}
+
+h1 {
+  width: 50%;
+  // border: 1px solid red;
+  margin-top: 35px;
+  margin-left: 130px; 
+  font-weight: 500;
+}
+
+.main-index img {
+  width: 66%;
+  position: relative;
+  right: calc(100vw * 0.1);
+  bottom: -50px; // this doesn't need to be calc
+}
+
+
+// FIRST SECTION STYLES //
+.new-materials {
+  margin: 200px auto 100px;
+  display: flex;
   flex-basis: calc((100% / 2) - 70px);
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
     div:nth-of-type(1) {
       width: calc(75% - 90px);
       display: flex;
@@ -21,10 +65,8 @@
       }
 }
 
-// end of section ONE "new materials"
 
-// section TWO gallery
-
+// SECOND SECTION (GALLERY) STYLES // 
 .gallery { 
   background: $ice;
   display: flex;
@@ -38,61 +80,41 @@
       }
 }
 
-// end of section TWO gallery 
-
-// section THREE "customized offers" 
-
+// THIRD SECTION (WITH ICONS)//
 .custom-offers {
   position: relative;
   padding-top: 50px;
   padding-bottom: 70px;
-    a {
-      text-transform: uppercase;
-      color: $black;
-    }
-      h3 {
-        display: inline;
-        position: relative;
-      }
-        h3:hover::after {
-          content: "";
-          position: absolute;
-          bottom: 15px;
-          left: 3%;
-          width: 90%;
-          height: 30%;
-          background: $yellow;
-          z-index: -1;
-		    }
-      }
-
-
-.custom-offers div:nth-of-type(1) {
-  display: flex;
+  a {
+    text-transform: uppercase;
+    color: $black;
+  }
+  h3 {
+    display: inline;
+    position: relative;
+  }
+  h3:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 3%;
+    width: 90%;
+    height: 30%;
+    background: $yellow;
+    z-index: -1;
+  }
+  div {
+    display: flex;
     li {
-      // flex-basis: 50%;
-      margin: 0 35px;
-      justify-content: space-between;
       position: relative;
+      margin-left: 55px;
     }
-}
-
-.custom-offers div:nth-of-type(2) {
-  display: flex;
-    li {
-      // flex-basis: 50%;
-      margin: 35px 35px 0 35px;
-      position: relative;
-    }
-}
-
-.custom-offers {
+  }
   i {
     position: absolute;
     left: -45px;
     top: 13px;
-  }
-    i::after {
+    &::after {
       content: "";
       width: 40px;
       height: 40px;
@@ -103,89 +125,92 @@
       top: -9px;
       z-index: -1;
     }
+  }
 }
 
 .fa-file {
   padding-left: 4px;
 }
 
-// new locations/group programs section 
-
+// FOURTH SECTION (IMAGES OUT OF WRAPPER)
 .new-locations {
   background: $ice;
   position: relative;
 }
 
-.flex-parent {
+.flex-article {
+  width: calc(50% - 5%);
   display: flex;
-  // position: relative;
-} 
+  flex-direction: column;
+  &:nth-of-type(1) {
+    text-align: right;
+  }
+}
 
-.parent-container {
-  border: 1px solid green;
+.parent-of-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-article:nth-of-type(1) img {
+  box-shadow: 20px 20px $yellow;
+  width: calc(100% + (100vw * 0.05));
+  position: relative;
+  bottom: 50px;
+  right: calc(100vw * 0.05);
+  @media (min-width: 1333px) {
+    width: calc(100% + ((100vw - 1200px) * 0.5));
+    right: calc((100vw - 1200px) * 0.5);
+  }
+}
+
+.flex-article:nth-of-type(2) img {
+  box-shadow: -20px 20px $yellow;
+  width: calc(100% + (100vw * 0.05));
+  position: relative;
+  top: 35px;
+  @media (min-width: 1333px) {
+    width: calc(100% + ((100vw - 1200px) * 0.5));
+  }
+}
+
+.new-locations .wrapper {
+  position: relative;
 }
 
 .text-container {
-  margin: 50px 0;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 70%;
-}
-
-.bottom {
-  margin-top: 50px;
-  text-align: right;
-  align-items: flex-end;
-    p {
-      margin-bottom: 20px;
-    }
+  // trbl
+  margin: 5% 0;
+  p {
+    padding-bottom: 25px;
+  }
 }
 
 .top {
-  margin-bottom: 50px;
-  align-items: flex-start;
-    p {
-      margin-bottom: 20px;
-    }
+  margin-top: 10%;
 }
 
-.image-container {
-  border: 1px solid blue;
+.bottom {
+  margin-bottom: 10%;
 }
 
-.top-left {
-  box-shadow: 20px 20px $yellow;
-  // position: relative;
-  // right: 120px;
-  // top: 0;
-}
-
-.bottom-right {
-  box-shadow: -20px 20px $yellow;
-  // position: relative;
-  // right: -140px;
-  // top: 0;
-}
-
-
-
+// FIFTH SECTION (BANNER)
 .banner {
   text-align: center;
+  div {
+      width: 75%;
+      margin: 0 auto;
+    }
     h2 {
       margin-top: 125px;
     }
-      div {
-        width: 75%;
-        margin: 0 auto;
-      }
-        div p {
-          padding-bottom: 30px;
-          text-align: left;
-        }
+    p {
+      padding-bottom: 30px;
+      text-align: left;
+    }
 }
 
+// FOOTER
 footer {
   background: $black;
   color: $white;

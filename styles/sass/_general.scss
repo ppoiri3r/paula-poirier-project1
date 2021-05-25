@@ -24,7 +24,7 @@ img {
   display: block;
 }
 
-body, nav, ul, li, h1, h2, h3, h4, h6, p, ul, li, a, article {
+body, nav, ul, li, h1, h2, h3, h4, h5, p, ul, li, a, article {
   margin: 0;
   padding: 0;
 }
@@ -44,6 +44,14 @@ h2, h4, h3 {
   text-transform: uppercase;
 }
 
+h5 {
+  font-family: $bold;
+  font-size: 1rem;
+  line-height: 58px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
 li {
   list-style-type: none;
 }
@@ -57,6 +65,7 @@ a {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+  // border: 1px solid black;
 }
 
 .button {
@@ -68,6 +77,7 @@ a {
   letter-spacing: 1px;
   // trbl
   padding: 10px 15px 5px 15px;
+  display: inline-block;
 }
 
 .logo {
