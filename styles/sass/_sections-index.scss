@@ -39,7 +39,7 @@ h1 {
   width: 66%;
   position: relative;
   right: calc(100vw * 0.1);
-  bottom: -50px; // this doesn't need to be calc
+  top: 0; // this doesn't need to be calc
 }
 
 
@@ -48,13 +48,16 @@ h1 {
   margin: 200px auto 100px;
   display: flex;
   flex-basis: calc((100% / 2) - 70px);
+  h2 {
+    margin-top: 20px;
+  }
 }
 
 .container {
   display: flex;
   justify-content: space-between;
     div:nth-of-type(1) {
-      width: calc(75% - 90px);
+      width: calc(75% - 120px);
       display: flex;
       flex-direction: column;
       justify-content: space-between;

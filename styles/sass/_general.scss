@@ -24,7 +24,7 @@ img {
   display: block;
 }
 
-body, nav, ul, li, h1, h2, h3, h4, h5, p, ul, li, a, article {
+body, nav, ul, li, h1, h2, h3, h4, h5, h6, p, ul, li, a, article {
   margin: 0;
   padding: 0;
 }
@@ -50,6 +50,11 @@ h5 {
   line-height: 58px;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-family: $basic;
 }
 
 li {

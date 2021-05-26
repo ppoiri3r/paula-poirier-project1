@@ -1,61 +1,138 @@
+// HEADER STYLES
+
 header.blog {
   background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/blog-image.jpg);
   height: 60vh;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-}
-
-.logo {
-  text-transform: uppercase;
-    span {
-      display: block;
-    }
-}
-
-.blog-topbar {
+  background-repeat: no-repeat;
+  .blog-topbar {
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
-}
-
-.blog ul {
+  }
+    .logo {
+      text-transform: uppercase;
+    span {
+      display: block;
+    }
+  }
+  ul {
   display: flex;
-}
-
-.blog a {
-  font-family: $basic;
-  text-transform: uppercase;
-  padding: 20px;
-  color: $black;
-  font-weight: bold;
-  transition: 0.3s;
-    .blog a:hover {
+  }
+    a {
+      font-family: $basic;
+      text-transform: uppercase;
+      margin: 20px;
+      color: $black;
+      font-weight: bold;
+      transition: 0.3s;
+      &:hover {
       border-bottom: 5px solid $yellow;
     }
-}
-
-.blog h1 {
+  } 
+  h1 {
   margin: 85px 0;
+  }
 }
 
-// headers ends ^^^^ 
-
-.flex-top {
-  display: flex;
-  // justify-content: space-between;
-}
-
-.image-container-aside,
-.text-container-aside {
-  box-shadow: -20px 20px $yellow;
-  background: $yellow;
-}
-
-.blog-main {
+// MAIN STYLES
+.blog-page {
   background: $ice;
 }
 
-.article-post {
+.main-article-parent {
   width: 60%;
-  background: $white;
+  // border: 1px solid red;
+  position: relative;
+  background: #FFFFFF;
+  border-right: 5px solid $yellow;
+  border-bottom: 5px solid $yellow;
+}
+
+.blog-image-container {
+  img {
+    width: calc(110% + (100vw * 0.05));
+    position: relative;
+    // bottom: -175px;
+    top: -100px;
+    left: -120px;
+    box-shadow: 20px 20px $yellow;
+    z-index: 20;
+  }
+}
+.text-content-of-article {
+  position: relative;
+  width: 100%;
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    padding: 10px 60px 10px 0;
+  }
+}
+
+.date-and-author {
+  font-style: italic;
+  font-size: 0.9rem;
+  letter-spacing: 0;
+  span {
+    font-weight: bold;
+  }
+}
+
+
+aside {
+  .written-content {
+    width: 95%;
+  }
+  width: 20%;
+  min-width: 320px;
+  background: $yellow;
+  // trbl
+  padding-left: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 550px;
+  right: 0;
+  img {
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+.blog-flex {
+  display: flex;
+  // border: 1px solid red;
+  .comments {
+    width: 100%;
+    background: $ice;
+  }
+  h5 {
+    margin-top: 30px;
+  }
+  h6 {
+    text-transform: uppercase;
+    margin: 10px 0 0 5px;
+  }
+}
+
+.comment, .comment2 {
+  display: flex;
+  width: 60%;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-top: 18px;
+  }
+}
+
+.comment2 {
+  margin-top: 40px;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
 }
