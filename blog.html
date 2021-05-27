@@ -64,19 +64,21 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloremque laborum, eius perferendis Lorem ipsum dolor sit.</p>
         </div>
       </article>
-      <form action="submit">
-        <fieldset>
-          <label for="name" class="sr-only">Name</label>
-          <input type="text" id="name" placeholder="Name">
-        
-          <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="Email Address">
-        
-          <label for="message">Comment</label>
-          <input type="text" id="message" placeholder="Message">
+      <form class="blog-form wrapper" action="submit">
+        <fieldset class="blog-fieldset">
+          <div class="form-flex">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name" class="name-blog">
+
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address" class="email-blog">
+          </div>
+          
+            <label for="message" class="sr-only">Comment</label>
+            <input type="text" id="message" placeholder="comment" class="message-blog">
+            <button type="submit" class="submit-blog">Post Comment</button>
         </fieldset>
       
-        <button type="submit">Post Comment</button>
       </form>
     </div>
   </section>
@@ -98,8 +100,8 @@
 </div>
 
 
-    <footer>
-      <p>Copyright © 2019 HackerYou</p>
-    </footer>
+<footer>
+  <p>Copyright © 2019 HackerYou</p>
+</footer>
 </body>
 </html>

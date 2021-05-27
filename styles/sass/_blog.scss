@@ -2,7 +2,7 @@
 
 header.blog {
   background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/blog-image.jpg);
-  height: 60vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,8 +42,8 @@ header.blog {
 }
 
 .main-article-parent {
-  width: 60%;
-  // border: 1px solid red;
+  width: 65%;
+  border: 1px solid red;
   position: relative;
   background: #FFFFFF;
   border-right: 5px solid $yellow;
@@ -63,11 +63,17 @@ header.blog {
 }
 .text-content-of-article {
   position: relative;
-  width: 100%;
+  left: -125px;
+  bottom: 100px;
+  padding-left: 125px;
+  padding-top: 50px;
+  width: 110%;
+  background: white;
   h2 {
     font-size: 1.5rem;
   }
   p {
+    // trbl
     padding: 10px 60px 10px 0;
   }
 }
@@ -135,4 +141,66 @@ aside {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+}
+
+// styling form 
+
+form.blog-form {
+  width: 60%;
+  border: 1px solid red;
+}
+fieldset.blog-fieldset {
+  border: 1px solid blue;
+  margin-top: 40px;
+}
+
+.form-flex {
+  display: flex;
+  text-align: center;
+  // border: 1px solid red;
+}
+
+input.email-blog,
+input.name-blog {
+  width: 50%;
+  padding: 20px;
+  border: none;
+  background: $ice;
+  border-bottom: 1px solid black;
+}
+
+.name-blog {
+  margin-right: 40px;
+}
+
+// input[type="text"]
+// input[type="text"]
+// input[type="email"]
+.name-blog::placeholder,
+.message-blog::placeholder
+.email-blog::placeholder {
+  background: $ice;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: $basic;
+}
+
+input.message-blog {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 100px;
+  border: 1px solid $black;
+  // width: 60%;
+  background: $ice;
+}
+
+button[type="submit"].submit-blog {
+  background: $evergreen;
+  border: none;
+  font-family: $bold;
+  color: $white;
+  text-transform: uppercase;
+  padding: 10px 15px 5px 15px;
+  display: block;
+  // width: 60%;
 }

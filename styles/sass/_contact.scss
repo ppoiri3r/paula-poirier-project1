@@ -1,0 +1,51 @@
+header.contact {
+  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/contact-image.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .contact-topbar {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  }
+    .logo {
+      text-transform: uppercase;
+    span {
+      display: block;
+    }
+  }
+  ul {
+  display: flex;
+  }
+    a {
+      font-family: $basic;
+      text-transform: uppercase;
+      margin: 20px;
+      color: $black;
+      font-weight: bold;
+      transition: 0.3s;
+      &:hover {
+      border-bottom: 5px solid $yellow;
+    }
+  } 
+  h1 {
+  margin: 85px 0;
+  }
+}
+
+// main 
+
+main.contact-page {
+  background: $ice;
+}
+
+.contact-form {
+  background: #FFFFFF;
+}
+
+.name-contact::placeholder, 
+.email-contact::placeholder, 
+.message-contact::placeholder {
+  background: #FFFFFF;
+}

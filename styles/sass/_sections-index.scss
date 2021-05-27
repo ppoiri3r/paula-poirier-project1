@@ -200,6 +200,7 @@ h1 {
 // FIFTH SECTION (BANNER)
 .banner {
   text-align: center;
+  margin-bottom: 125px;
   div {
       width: 75%;
       margin: 0 auto;
@@ -218,5 +219,5 @@ footer {
   background: $black;
   color: $white;
   text-align: center;
-  margin-top: 125px;
+  // margin-top: 125px;
 }
