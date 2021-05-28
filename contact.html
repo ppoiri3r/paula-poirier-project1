@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <header class="contact">
+  <header class="contact secondary-pages">
     <div class="wrapper">
-      <div class="contact-topbar">
-        <p class="logo">Sanctuary <span>Helpers</span></p>
-        <nav>
+      <div class="topbar">
+        <p class="logo">Sanctuary Helpers</p>
+        <nav class="main-topbar-nav">
+          <label class="hamburgerMenu" for="hamburgerMenu"><i class="mobile-only fas fa-bars"></i></label>
+          <input type="checkbox" id="hamburgerMenu" class="sr-only">
           <ul>
-            <li><a href="#index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -27,24 +29,23 @@
     </div>
   </header>
   <main class="contact-page">
-    <div class="wrapper">
-      <div class="flex-contact">
-        <section>
-          <form class="contact-form wrapper" action="submit">
-            <fieldset>
-              <label for="name" class="sr-only">Name</label>
-              <input type="text" id="name" placeholder="Name" class="name-contact">
+    <div class="wrapper contact-page-flex">
+      <form action="submit">
+        <fieldset>
+          <div class="form-flex">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" placeholder="Name">
+      
+            <label for="email" class="sr-only">Email Address</label>
+            <input type="email" id="email" placeholder="Email Address">
+          </div>
+      
+          <label for="message" class="sr-only">Comment</label>
+          <textarea id="message" placeholder="comment"></textarea>
+          <button type="submit">Post Comment</button>
+        </fieldset>
+      </form>
 
-              <label for="email" class="sr-only">Email Address</label>
-              <input type="email" id="email" placeholder="Email Address" class="email-contact">
-
-              <label for="message" class="sr-only">Message</label>
-              <input type="text" id="message" placeholder="Message" class="message-contact">
-              <button type="submit">Submit</button>
-            </fieldset>
-          </form>
-        </div>
-      </section>
       <section class="contact-info">
         <div class="wrapper">
           <nav>
@@ -55,8 +56,8 @@
               <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
             </ul>
           </nav>
-          <p>info@email.com</p>
-          <p>123 456 7890</p>
+          <p class="email">info@email.com</p>
+          <p>123 - 456 - 7890</p>
           <p>123 Queen Street West,</p>
           <p>Unit 10</p>
           <p>Toronto, Ontario</p>

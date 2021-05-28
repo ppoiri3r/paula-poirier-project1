@@ -299,7 +299,7 @@ a {
 
 .wrapper {
   max-width: 1200px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -362,7 +362,8 @@ header.main-index {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.main-topbar-nav ul a:hover {
+.main-topbar-nav ul a:hover,
+.main-topbar-nav ul a:focus {
   border-bottom: 5px solid #F8FB05;
 }
 
@@ -453,7 +454,8 @@ h1 {
   display: inline;
   position: relative;
 }
-.custom-offers h3:hover::after {
+.custom-offers h3:hover::after,
+.custom-offers h3:focus {
   content: "";
   position: absolute;
   bottom: 15px;
@@ -590,86 +592,68 @@ footer {
   text-align: center;
 }
 
-header.blog {
+header.secondary-pages {
   background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/blog-image.jpg);
   height: 75vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-header.blog .blog-topbar {
-  padding-top: 30px;
+header.secondary-pages .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header.blog .logo {
+header.secondary-pages .logo {
   text-transform: uppercase;
+  width: 20%;
 }
-header.blog .logo span {
-  display: block;
-}
-header.blog ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-header.blog a {
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  margin: 20px;
-  color: #151514;
-  font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-header.blog a:hover {
-  border-bottom: 5px solid #F8FB05;
-}
-header.blog h1 {
+header.secondary-pages h1 {
   margin: 85px 0;
 }
 
-.blog-page {
+main.blog-page {
   background: #E0FDDF;
 }
 
 .main-article-parent {
-  width: 65%;
+  width: 75%;
   border: 1px solid red;
   position: relative;
+  left: -125px;
   background: #FFFFFF;
   border-right: 5px solid #F8FB05;
   border-bottom: 5px solid #F8FB05;
 }
 
 .blog-image-container img {
-  width: calc(110% + (100vw * 0.05));
+  width: calc(100% - 20px);
   position: relative;
   top: -100px;
-  left: -120px;
   -webkit-box-shadow: 20px 20px #F8FB05;
           box-shadow: 20px 20px #F8FB05;
-  z-index: 20;
 }
 
 .text-content-of-article {
-  position: relative;
-  left: -125px;
-  bottom: 100px;
   padding-left: 125px;
-  padding-top: 50px;
-  width: 110%;
+  padding-right: 40px;
+  width: 100%;
   background: white;
 }
 .text-content-of-article h2 {
   font-size: 1.5rem;
 }
 .text-content-of-article p {
-  padding: 10px 60px 10px 0;
+  padding: 10px 60px 20px 0;
+}
+.text-content-of-article p:last-child {
+  margin-bottom: 30px;
 }
 
 .date-and-author {
@@ -686,10 +670,11 @@ aside {
   min-width: 320px;
   background: #F8FB05;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   position: absolute;
   top: 550px;
   right: 0;
+  margin-top: 10%;
 }
 aside .written-content {
   width: 95%;
@@ -699,19 +684,16 @@ aside img {
   bottom: 20px;
 }
 
-.blog-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.blog-flex .comments {
+.comments {
   width: 100%;
   background: #E0FDDF;
 }
-.blog-flex h5 {
-  margin-top: 30px;
+
+h5 {
+  padding-top: 30px;
 }
-.blog-flex h6 {
+
+h6 {
   text-transform: uppercase;
   margin: 10px 0 0 5px;
 }
@@ -720,7 +702,6 @@ aside img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
 }
 .comment img, .comment2 img {
   width: 60px;
@@ -743,99 +724,11 @@ aside img {
   margin-left: 30px;
 }
 
-form.blog-form {
-  width: 60%;
-  border: 1px solid red;
-}
-
-fieldset.blog-fieldset {
-  border: 1px solid blue;
-  margin-top: 40px;
+.comment-section-container {
+  width: calc(75% - 125px);
 }
 
 .form-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-}
-
-input.email-blog,
-input.name-blog {
-  width: 50%;
-  padding: 20px;
-  border: none;
-  background: #E0FDDF;
-  border-bottom: 1px solid black;
-}
-
-.name-blog {
-  margin-right: 40px;
-}
-
-.name-blog::-webkit-input-placeholder, .message-blog::-webkit-input-placeholder .email-blog::-webkit-input-placeholder {
-  background: #E0FDDF;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
-}
-
-.name-blog::-moz-placeholder, .message-blog::-moz-placeholder .email-blog::-moz-placeholder {
-  background: #E0FDDF;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
-}
-
-.name-blog:-ms-input-placeholder, .message-blog:-ms-input-placeholder .email-blog:-ms-input-placeholder {
-  background: #E0FDDF;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
-}
-
-.name-blog::-ms-input-placeholder, .message-blog::-ms-input-placeholder .email-blog::-ms-input-placeholder {
-  background: #E0FDDF;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
-}
-
-.name-blog::placeholder,
-.message-blog::placeholder .email-blog::placeholder {
-  background: #E0FDDF;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif;
-}
-
-input.message-blog {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-bottom: 100px;
-  border: 1px solid #151514;
-  background: #E0FDDF;
-}
-
-button[type=submit].submit-blog {
-  background: #065635;
-  border: none;
-  font-family: "Kumar One", cursive;
-  color: #F5F5F5;
-  text-transform: uppercase;
-  padding: 10px 15px 5px 15px;
-  display: block;
-}
-
-header.contact {
-  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/contact-image.jpg);
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-header.contact .contact-topbar {
-  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,61 +736,125 @@ header.contact .contact-topbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-header.contact .logo {
-  text-transform: uppercase;
+
+fieldset {
+  border: none;
 }
-header.contact .logo span {
-  display: block;
+
+input[type=text],
+input[type=email],
+textarea {
+  background-color: inherit;
 }
-header.contact ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+input[type=text],
+input[type=email] {
+  border: none;
+  border-bottom: 1px solid #151514;
+  width: calc(50% - 20px);
+  padding: 20px;
 }
-header.contact a {
+
+input[type=text]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  margin: 20px;
+  font-size: 0.8rem;
   color: #151514;
-  font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  text-transform: uppercase;
 }
-header.contact a:hover {
-  border-bottom: 5px solid #F8FB05;
+
+input[type=text]::-moz-placeholder, input[type=email]::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #151514;
+  text-transform: uppercase;
 }
-header.contact h1 {
-  margin: 85px 0;
+
+input[type=text]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #151514;
+  text-transform: uppercase;
+}
+
+input[type=text]::-ms-input-placeholder, input[type=email]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #151514;
+  text-transform: uppercase;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  color: #151514;
+  text-transform: uppercase;
+}
+
+textarea {
+  border: 1px solid #151514;
+  width: 100%;
+  height: 200px;
+  margin: 30px 0 20px 0;
+  padding: 20px;
+}
+
+button[type=submit] {
+  background: #065635;
+  font-family: "Kumar One", cursive;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  border: none;
+  padding: 16px 15px 11px 15px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+header.contact {
+  background-image: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/contact-image.jpg);
 }
 
 main.contact-page {
   background: #E0FDDF;
 }
-
-.contact-form {
-  background: #FFFFFF;
+main.contact-page form {
+  background: #F5F5F5;
+  -webkit-box-shadow: 20px 20px #F8FB05;
+          box-shadow: 20px 20px #F8FB05;
+  width: 60%;
+  position: relative;
+  bottom: 90px;
 }
-
-.name-contact::-webkit-input-placeholder, .email-contact::-webkit-input-placeholder, .message-contact::-webkit-input-placeholder {
-  background: #FFFFFF;
+main.contact-page form button[type=submit] {
+  margin-bottom: 25px;
 }
-
-.name-contact::-moz-placeholder, .email-contact::-moz-placeholder, .message-contact::-moz-placeholder {
-  background: #FFFFFF;
+main.contact-page .contact-page-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-
-.name-contact:-ms-input-placeholder, .email-contact:-ms-input-placeholder, .message-contact:-ms-input-placeholder {
-  background: #FFFFFF;
+main.contact-page .contact-info {
+  width: 40%;
+  padding-left: 10%;
 }
-
-.name-contact::-ms-input-placeholder, .email-contact::-ms-input-placeholder, .message-contact::-ms-input-placeholder {
-  background: #FFFFFF;
+main.contact-page .contact-info p.email {
+  padding-bottom: 20px;
 }
-
-.name-contact::placeholder,
-.email-contact::placeholder,
-.message-contact::placeholder {
-  background: #FFFFFF;
+main.contact-page .contact-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main.contact-page .contact-info ul li {
+  padding-top: 70px;
+  padding-right: 25px;
+}
+main.contact-page .contact-info ul li a {
+  color: #151514;
 }
 
 @media (max-width: 1106px) {
@@ -1056,8 +1013,8 @@ main.contact-page {
     display: block;
   }
 
-  input[type=checkbox]:not(:checked) + ul {
-    display: none;
+  input[type=checkbox] {
+    visibility: hidden;
   }
 
   label.hamburgerMenu {

@@ -10,15 +10,17 @@
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-<header class="blog">
+<header class="blog secondary-pages">
   <div class="wrapper">
-    <div class="blog-topbar">
-      <p class="logo">Sanctuary <span>Helpers</span></p>
-      <nav>
+    <div class="topbar">
+      <p class="logo">Sanctuary Helpers</p>
+      <nav class="main-topbar-nav">
+        <label class="hamburgerMenu" for="hamburgerMenu"><i class="mobile-only fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburgerMenu" class="sr-only">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -46,9 +48,9 @@
   </section>
 </main>
 
-<div class="blog-flex">
-  <section class="comments">
-    <div class="wrapper">
+<section class="comments">
+  <div class="wrapper">
+    <div class="comment-section-container">
       <h5>Comments:</h5>
       <article class="comment">
         <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/comment-image.jpg" alt="">
@@ -64,24 +66,24 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloremque laborum, eius perferendis Lorem ipsum dolor sit.</p>
         </div>
       </article>
-      <form class="blog-form wrapper" action="submit">
-        <fieldset class="blog-fieldset">
+      <form action="submit">
+        <fieldset>
           <div class="form-flex">
             <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name" class="name-blog">
+            <input type="text" id="name" placeholder="Name">
 
             <label for="email" class="sr-only">Email Address</label>
-            <input type="email" id="email" placeholder="Email Address" class="email-blog">
+            <input type="email" id="email" placeholder="Email Address">
           </div>
           
             <label for="message" class="sr-only">Comment</label>
-            <input type="text" id="message" placeholder="comment" class="message-blog">
-            <button type="submit" class="submit-blog">Post Comment</button>
+            <textarea id="message" placeholder="comment"></textarea>
+            <button type="submit">Post Comment</button>
         </fieldset>
-      
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <aside>
     <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/sidebar-image.jpg" alt="">

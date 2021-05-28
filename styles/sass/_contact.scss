@@ -1,51 +1,40 @@
 header.contact {
-  background: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/contact-image.jpg);
-  height: 75vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  .contact-topbar {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  }
-    .logo {
-      text-transform: uppercase;
-    span {
-      display: block;
-    }
-  }
-  ul {
-  display: flex;
-  }
-    a {
-      font-family: $basic;
-      text-transform: uppercase;
-      margin: 20px;
-      color: $black;
-      font-weight: bold;
-      transition: 0.3s;
-      &:hover {
-      border-bottom: 5px solid $yellow;
-    }
-  } 
-  h1 {
-  margin: 85px 0;
-  }
+  background-image: url(../project-1-sanctuary-helpers/sanctuary-helpers-final-images/contact-image.jpg);
 }
 
 // main 
 
 main.contact-page {
   background: $ice;
-}
-
-.contact-form {
-  background: #FFFFFF;
-}
-
-.name-contact::placeholder, 
-.email-contact::placeholder, 
-.message-contact::placeholder {
-  background: #FFFFFF;
+    form {
+      background: $white;
+      box-shadow: 20px 20px $yellow;
+      width: 60%;
+      position: relative;
+      bottom: 90px;
+        button[type="submit"] {
+          margin-bottom: 25px;
+        }
+    }
+    .contact-page-flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact-info {
+      width: 40%;
+      padding-left: 10%;
+      p.email {
+        padding-bottom: 20px;
+      }
+      ul {
+        display: flex;
+          li {
+            padding-top: 70px;
+            padding-right: 25px;
+              a {
+                color: $black;
+              }
+          }
+      }
+    }
 }

@@ -22,7 +22,8 @@ header.main-index {
         color: black;
         transition: 0.3s;
       }
-        a:hover {
+        a:hover,
+        a:focus {
           border-bottom: 5px solid $yellow;
         }
 }
@@ -96,7 +97,8 @@ h1 {
     display: inline;
     position: relative;
   }
-  h3:hover::after {
+  h3:hover::after,
+  h3:focus {
     content: "";
     position: absolute;
     bottom: 15px;

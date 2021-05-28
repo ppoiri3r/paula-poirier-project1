@@ -127,12 +127,16 @@
     right: 0;
     display: none;
   }
+
   input[type="checkbox"]:checked + ul {
     display: block;
   }
-  input[type="checkbox"]:not(:checked) + ul {
-    display: none;
+
+  input[type="checkbox"] {
+    visibility: hidden;
+    
   }
+
   label.hamburgerMenu {
     display: block;
     position: absolute;
