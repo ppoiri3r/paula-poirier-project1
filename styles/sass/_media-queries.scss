@@ -1,6 +1,6 @@
 @media (max-width: 1106px) {
   .new-materials {
-    margin: 50px
+    margin-top: 50px
   }
   .banner p {
     text-align: center;
@@ -100,9 +100,9 @@
       flex-direction: column;
       .flex-article {
         width: 85%;
-          div:nth-of-type(2) img {
-            left: calc(100vw * 0.05);
-          }
+        &:nth-of-type(2) {
+          margin-left: 15%;  
+        }
       }
     }
   }
