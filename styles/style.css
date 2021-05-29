@@ -896,7 +896,7 @@ main.contact-page .contact-info ul li a {
     line-height: 37px;
   }
 }
-@media (max-width: 751px) {
+@media (max-width: 768px) {
   .main-index img {
     top: 68px;
   }
@@ -904,8 +904,7 @@ main.contact-page .contact-info ul li a {
   .new-materials img {
     margin-top: 124px;
   }
-}
-@media (max-width: 768px) {
+
   .main-index h1 {
     margin-left: -8px;
   }
