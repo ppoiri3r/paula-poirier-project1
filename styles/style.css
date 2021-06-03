@@ -239,6 +239,10 @@ html {
   display: none;
 }
 
+.invisible {
+  display: none;
+}
+
 html {
   font-size: 125%;
 }
@@ -427,14 +431,15 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .gallery li {
   width: calc((100% / 3) - 25px);
@@ -994,7 +999,13 @@ main.contact-page .contact-info ul li a {
   }
 }
 @media (max-width: 560px) {
-  .main-topbar-nav ul {
+  #closed {
+    display: none;
+    font-size: 1.5rem;
+  }
+
+  #drop-down-nav {
+    display: none;
     position: absolute;
     width: auto;
     -webkit-box-orient: vertical;
@@ -1002,29 +1013,22 @@ main.contact-page .contact-info ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     background: #E0FDDF;
-    padding: 10px;
-    top: 0;
-    right: 0;
-    display: none;
+    border-radius: 20px;
+    top: 50px;
+    right: 15px;
   }
 
-  input[type=checkbox]:checked + ul {
-    display: block;
-  }
-
-  input[type=checkbox] {
-    visibility: hidden;
-  }
-
-  label.hamburgerMenu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
+  #drop-down-nav li {
+    font-size: 0.8rem;
+    padding: 0px;
   }
 
   .mobile-only {
     display: block;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
 
   .main-index img {

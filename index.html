@@ -14,9 +14,11 @@
 <header class="main-index">
   <div class="wrapper">
     <nav class="main-topbar-nav">
-      <label class="hamburgerMenu" for="hamburgerMenu"><i class="mobile-only fas fa-bars"></i></label>
-      <input type="checkbox" id="hamburgerMenu" class="sr-only">
-      <ul>
+      <div>
+        <i class="mobile-only fas fa-bars" id="hamburger"></i>
+        <i class="mobile-only fas fa-times" id="closed"></i>
+      </div>
+      <ul class="invisible" id="drop-down-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -47,17 +49,19 @@
 
   <!-- START gallery -->
   <section class="gallery">
-    <ul class="wrapper">
-      <li>
-        <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-1.jpg" alt="Teal coloured dresser against a white brick wall. Two picture frames and a decorative vase are on the dresser.">
-      </li>
-      <li>
-        <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-2.jpg" alt="Light brown leather sofa with 3 decorative pillows on it. A coffee table with magazines on it is placed infront of the sofa.">
-      </li>
-      <li>
-        <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-3.jpg" alt="">
-      </li>
-    </ul>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-1.jpg" alt="Teal coloured dresser against a white brick wall. Two picture frames and a decorative vase are on the dresser.">
+        </li>
+        <li>
+          <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-2.jpg" alt="Light brown leather sofa with 3 decorative pillows on it. A coffee table with magazines on it is placed infront of the sofa.">
+        </li>
+        <li>
+          <img src="./project-1-sanctuary-helpers/sanctuary-helpers-final-images/gallery-image-3.jpg" alt="">
+        </li>
+      </ul>
+    </div>
   </section>
   <!-- END OF gallery -->
 
@@ -140,6 +144,7 @@
 <footer>
   <p>Copyright © 2019 HackerYou</p>
 </footer>
+<script src="./script.js"></script>
 
 </body>
 </html>

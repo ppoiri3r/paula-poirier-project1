@@ -114,34 +114,30 @@
 }
 
 @media (max-width: 560px) {
-  .main-topbar-nav ul {
+  #closed {
+    display: none;
+    font-size: 1.5rem;
+  }
+  #drop-down-nav {
+    display: none;
     position: absolute;
     width: auto;
     flex-direction: column;
     background: $ice;
-    padding: 10px;
-    top: 0;
-    right: 0;
-    display: none;
+    border-radius: 20px;
+    top: 50px;
+    right: 15px;
   }
-
-  input[type="checkbox"]:checked + ul {
-    display: block;
+  #drop-down-nav li {
+    font-size: 0.8rem;
+    padding: 0px;
   }
-
-  input[type="checkbox"] {
-    visibility: hidden;
-    
-  }
-
-  label.hamburgerMenu {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-}
   .mobile-only {
     display: block;
+    text-align: right;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
   }
   .main-index img {
     top: 150px;
